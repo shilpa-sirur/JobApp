@@ -1,0 +1,12 @@
+input[type=text]{
+  font-weight: normal;
+  padding-left: 0.5em;
+  background-color: yellow	
+}
+
+input[type="submit"] { 
+  background-color: yellow	
+}
+
+#instruction { border: 1px solid black; }
+

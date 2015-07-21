@@ -1,0 +1,53 @@
+<!DOCTYPE/>
+<html>
+<head>
+	<title>HTML Job Application form</title>
+  <link rel="stylesheet" href="/static/css/styles.css" />
+    </head>
+</head>
+<body>
+	<form action ="/search" method="post" >
+  			<label> *First Name:
+  				<input type="text" name="firstname">
+  			</label> 
+  			<label> *Last name:
+  				<input type="text" name="lastname">
+  			</label> 		
+
+  			<label>Salary:
+   				<input type="text" name="salary">
+  			</label>
+	<h5> * Choose a position you are applying for: </h5>
+
+  <p><input type="radio" name="job" value="software engineer">Software Engineer</p>
+  
+  <p><input type="radio" name="job" value="qa engineer">QA Engineer</p>
+  
+  <p><input type="radio" name="job" value="product manager">Product Manager</p>
+    <input type ="submit" </input>
+  <p>   
+
+	</form>
+
+{% with messages = get_flashed_messages() %}
+          {% if messages %}
+          {% for message in messages %}
+          <ul class="flashes">
+              <li>{{message}}</li>
+          </ul>
+          {% endfor %}
+          {% endif %}
+          {% endwith %}
+          
+<div id="instruction">
+
+<h3>Instructions</h3>
+
+<p>This is a job application website.</p>
+<p>Please complete the form with your first name, last name position you want to apply and Salary. Please put salary number per anum and in dollors</p>
+
+</div> 
+
+
+</body>
+</html>
